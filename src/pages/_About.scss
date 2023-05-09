@@ -1,0 +1,227 @@
+
+
+.about__main{
+    width: 100%;
+    margin: 1.5rem auto;
+
+    .about__owner{
+        width: 90%;
+        background-color: #8d9fd6;
+        padding: .5rem;
+        margin: 2rem auto;
+        height: 19rem;
+        border-left: .5rem solid green;
+        border-top-right-radius: .8rem;
+        border-bottom-right-radius: .8rem;
+        display: flex;
+        // flex-wrap: wrap;
+
+        .owner__text{
+            width: 60%;
+            height: 18rem;
+            padding: .5rem;
+            background-color: #e2e2e2;
+            border-top: .2rem solid #6b6b73;
+            border-left: .2rem solid #6b6b73;
+            border-bottom: .2rem solid #6b6b73;
+            display: flex;
+            align-items: center;
+        }
+
+        .owner__profile{
+            width: 40%;
+            border-top-right-radius: .8rem;
+            border-bottom-right-radius: .8rem;
+            background-color: #efefef;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            box-shadow: .1rem .1rem .4rem gray inset,
+                        -.1rem -.1rem .4rem gray inset;
+
+            .img{
+                width: 12rem;
+                height: 12rem;
+                background-image: url('src/assets/illumy.png');
+                background-position: center;
+                background-size: cover;
+                border-radius: 50%;
+                cursor: pointer;
+
+            }
+        }
+    }
+
+    .about__dev{
+        width: 90%;
+        background-color: #8d9fd6;
+        padding: .5rem;
+        margin: 2rem auto;
+        height: 19rem;
+        border-left: .5rem solid rgb(59, 150, 235);
+        border-top-right-radius: .8rem;
+        border-bottom-right-radius: .8rem;
+        display: flex;
+        flex-wrap: wrap;
+
+        .dev__text{
+            width: 60%;
+            height: 18rem;
+            padding: .5rem;
+            background-color: #e2e2e2;
+            border-top: .2rem solid #6b6b73;
+            border-left: .2rem solid #6b6b73;
+            border-bottom: .2rem solid #6b6b73;
+            display: flex;
+            align-items: center;
+
+        }
+
+        .dev__profile{
+            width: 40%;
+            border-top-right-radius: .8rem;
+            border-bottom-right-radius: .8rem;
+            background-color: #efefef;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            box-shadow: .1rem .1rem .4rem gray inset,
+                        -.1rem -.1rem .4rem gray inset;
+
+            .img{
+                width: 12rem;
+                height: 12rem;
+                background-image: url('src/assets/illumy.png');
+                background-position: center;
+                background-size: cover;
+                border-radius: 50%;
+                cursor: pointer;
+
+            }
+        }
+    }
+
+
+    @media (max-width: 960px) {
+
+        .about__owner{
+            width: 90%;
+            height: 31.5rem;
+            background-color: #8d9fd6;
+            padding: .5rem;
+            margin: 2rem auto;
+            border-left: .5rem solid green;
+            border-top-right-radius: .8rem;
+            border-bottom-right-radius: .8rem;
+            display: block;
+    
+            .owner__text{
+                width: 100%;
+                height: 18rem;
+                padding: .5rem;
+                background-color: #e2e2e2;
+                border-top: .2rem solid #6b6b73;
+                border-left: .2rem solid #6b6b73;
+                border-bottom: .2rem solid transparent;
+                border-right: .2rem solid #6b6b73;
+                display: flex;
+                align-items: center;
+            }
+
+            .owner__profile{
+                width: 100%;
+                margin: .5rem 0;
+                border-top-right-radius: .8rem;
+                border-bottom-right-radius: .8rem;
+                background-color: #efefef;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+                box-shadow: .1rem .1rem .4rem gray inset,
+                            -.1rem -.1rem .4rem gray inset;
+    
+                .img{
+                    width: 12rem;
+                    height: 12rem;
+                    background-image: url('src/assets/illumy.png');
+                    background-position: center;
+                    background-size: cover;
+                    border-radius: 50%;
+                    cursor: pointer;
+    
+                }
+            }
+        }
+    
+        .about__dev{
+            width: 90%;
+            height: 31.5rem;
+            background-color: rgb(237, 235, 235);
+            padding: .5rem;
+            margin: 2rem auto;
+            border-left: .5rem solid rgb(59, 150, 235);
+            border-top-right-radius: .8rem;
+            border-bottom-right-radius: .8rem;
+            display: block;
+    
+            .dev__text{
+                width: 100%;
+                height: 18rem;
+                padding: .5rem;
+                background-color: #e2e2e2;
+                border-top: .2rem solid #6b6b73;
+                border-left: .2rem solid #6b6b73;
+                border-bottom: .2rem solid transparent;
+                border-right: .2rem solid #6b6b73;
+                display: flex;
+                align-items: center;
+            }
+
+            .dev__profile{
+                width: 100%;
+                margin: .5rem 0;
+                border-top-right-radius: .8rem;
+                border-bottom-right-radius: .8rem;
+                background-color: #efefef;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+                box-shadow: .1rem .1rem .4rem gray inset,
+                            -.1rem -.1rem .4rem gray inset;
+    
+                .img{
+                    width: 12rem;
+                    height: 12rem;
+                    background-image: url('src/assets/illumy.png');
+                    background-position: center;
+                    background-size: cover;
+                    border-radius: 50%;
+                    cursor: pointer;
+    
+                }
+            }
+        }
+    
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

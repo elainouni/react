@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html{
+  font-size: 16px;
+}
+
+
+@media (max-width: 768px) {
+  html{
+    font-size: 13px;
+  }
+}
+
+.App{
+  background: linear-gradient(90deg, rgba(201,214,255,1) 0%, rgba(226,226,226,1) 100%);
+}
+
+.active{
+  color: black !important;
+}
+
+@import "layout/NavbarWeb";
+@import "sliders/mainSlider//main\ slider";
+@import "sliders/promotions//promotions";
+@import "layout/WhyUs";
+@import "layout/Services";
+@import "layout/Footer";
+@import 'pages/Products';
+@import 'pages/About';
+@import 'pages/Contact';
+@import 'pages/Register';
+@import 'pages/Login';

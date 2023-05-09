@@ -1,0 +1,341 @@
+
+.navbar__mob{
+    display: none;
+}
+
+.upper__navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 4vh;
+    padding: .5rem;
+
+    .telegram{
+        display: flex;
+        align-items: center;
+        font-size: 1.3rem;
+        color: rgb(72, 144, 227);
+
+        .telegram__link{
+            text-decoration: none;
+            font-size: 1rem;
+            margin: 0 .3rem;
+            color: rgb(72, 144, 227);
+
+            &:hover{
+                color: black;
+            }
+        }
+    }
+
+    .whatsapp{
+        display: flex;
+        align-items: center;
+        font-size: 1.3rem;
+        color: rgb(23, 153, 54);
+
+        .whatsapp__link{
+            text-decoration: none;
+            font-size: 1rem;
+            margin: 0 .3rem;
+            color: rgb(23, 153, 54);
+
+            &:hover{
+                color: black;
+            }
+        }
+    }
+}
+
+.navbar__web{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #8d9fd6;
+
+    .logo{
+        font-size: 2rem;
+        font-weight: 700;
+        color: #e2e2e2;
+    }
+
+    .navbar__links{
+        display: flex;
+        gap: 2rem;
+
+        .navbar__link{
+            text-decoration: none;
+            color: #e2e2e2;
+            font-size: 1.2rem;
+            font-weight: 600;
+            position: relative;
+
+            &::before{
+                content: "";
+                width: 0;
+                height: .15rem;
+                background-color: #e2e2e2;
+                position: absolute;
+                bottom: -5px;
+                transition: .2s ease-out;
+            }
+
+            &:hover::before{
+                width: 100%;
+            }
+        }
+    }
+
+    .auth__links{
+        display: flex;
+        gap: 2rem;
+
+        .navbar__link{
+            text-decoration: none;
+            color: #e2e2e2;
+            font-size: 1.2rem;
+            font-weight: 600;
+            position: relative;
+
+            &::before{
+                content: "";
+                width: 0;
+                height: .15rem;
+                background-color: #e2e2e2;
+                position: absolute;
+                bottom: -5px;
+                transition: .2s ease-out;
+            }
+
+            &:hover::before{
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+/* ====================== 
+    mini laptops styling
+   ====================== */
+
+   @media (max-width: 960px) {
+    .navbar__mob{
+        display: none;
+    }
+
+    .upper__navbar{
+        display: flex;
+        align-items: center;
+        height: 4vh;
+        padding: 0 .5rem;
+    }
+
+    .navbar__web{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: .7rem;
+        background-color: #8d9fd6;
+    
+        .logo{
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: #e2e2e2;
+        }
+    
+        .navbar__links{
+            display: flex;
+            gap: 1.5rem;
+    
+            .navbar__link{
+                text-decoration: none;
+                color: #e2e2e2;
+                font-size: 1rem;
+                font-weight: 500;
+                position: relative;
+    
+                &::before{
+                    content: "";
+                    width: 0;
+                    height: .15rem;
+                    background-color: #e2e2e2;
+                    position: absolute;
+                    bottom: -5px;
+                    transition: .2s ease-out;
+                }
+    
+                &:hover::before{
+                    width: 100%;
+                }
+            }
+        }
+    
+        .auth__links{
+            display: flex;
+            gap: 1.5rem;
+    
+            .navbar__link{
+                text-decoration: none;
+                color: #e2e2e2;
+                font-size: 1.2rem;
+                font-weight: 500;
+                position: relative;
+    
+                &::before{
+                    content: "";
+                    width: 0;
+                    height: .15rem;
+                    background-color: #e2e2e2;
+                    position: absolute;
+                    bottom: -5px;
+                    transition: .2s ease-out;
+                }
+    
+                &:hover::before{
+                    width: 100%;
+                }
+            }
+        }
+    }
+   }
+
+
+   /* ====================== 
+       Tablets and mobiles
+      ====================== */
+
+   @media (max-width: 768px) {
+
+    .navbar__web{
+        display: none;
+    }
+
+    .App{
+        margin-top: 8vh;
+    }
+
+    .upper__navbar{
+        display: none;
+    }
+
+    .navbar__mob{
+        width: 100%;
+        display: flex;
+        height: 8vh;
+        justify-content: space-between;
+        align-items: center;
+        padding: .7rem;
+        background-color: #8d9fd6;
+        position: fixed;
+        top: 0;
+        z-index: 9999;
+
+
+        .logo{
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: #e2e2e2;
+        }
+    
+        .burger{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #e2e2e2;
+            font-size: 2rem;
+            font-weight: 700;
+            cursor: pointer;
+        }
+    }
+
+    .subnav{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: fit-content;
+        height: 92vh;
+        padding: .8rem;
+        opacity: .98;
+        position: fixed;
+        right: 0;
+        top: 8vh;
+        z-index: 999;
+
+        &::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #8d9fd6;
+            filter: blur(8px);
+            backdrop-filter: blur(8px);
+        }
+
+        .navbar__links{
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            align-items: center;
+            padding: 1rem 0;
+            
+            .navbar__link{
+                text-decoration: none;
+                color: #e2e2e2;
+                font-size: 1.2rem;
+                font-weight: 500;
+                position: relative;
+                z-index: 100000;
+    
+                &::before{
+                    content: "";
+                    width: 0;
+                    height: .15rem;
+                    background-color: #e2e2e2;
+                    position: absolute;
+                    bottom: -5px;
+                    transition: .2s ease-out;
+                }
+    
+                &:hover::before{
+                    width: 100%;
+                }
+            }
+        }
+
+        .auth__links{
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            align-items: center;
+            padding: 1rem 0;
+    
+            .navbar__link{
+                text-decoration: none;
+                color: #e2e2e2;
+                font-size: 1.2rem;
+                font-weight: 500;
+                position: relative;
+    
+                &::before{
+                    content: "";
+                    width: 0;
+                    height: .15rem;
+                    background-color: #e2e2e2;
+                    position: absolute;
+                    bottom: -5px;
+                    transition: .2s ease-out;
+                }
+    
+                &:hover::before{
+                    width: 100%;
+                }
+            }
+        }
+    }
+   }
+
+

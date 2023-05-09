@@ -1,0 +1,128 @@
+
+
+.footer{
+    width: 100%;
+    padding: 2rem 0;
+    background-color: #8d9fd6;
+    border-top: .2rem solid #3d445d;
+
+    .socials{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: .5rem 1rem;
+        color: #3d445d;
+        letter-spacing: 2px;
+        font-weight: 400;
+
+        h3{
+            font-family: sans-serif;
+            color: #3d445d;
+        }
+
+        .social__icons{
+            font-size: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5rem;
+            transition: .2s ease;
+
+            .icon{
+                color: #3d445d;
+                text-decoration: none;
+                display: block;
+                transition: .2s ease;
+            }
+
+            
+                .icon:nth-child(1){
+                    &:hover{
+                        color: royalblue;
+                        cursor: pointer;
+                        transform: translateY(-.5rem);
+                    }
+                }
+
+                .icon:nth-child(2){
+                    &:hover{
+                        color: rgb(230, 61, 131);
+                        cursor: pointer;
+                        transform: translateY(-.5rem);
+                    }
+                }
+
+                .icon:nth-child(3){
+                    &:hover{
+                        color: rgb(88, 148, 232);
+                        cursor: pointer;
+                        transform: translateY(-.5rem);
+                    }
+                }
+
+                .icon:nth-child(4){
+                    &:hover{
+                        color: rgb(17, 167, 12);
+                        cursor: pointer;
+                        transform: translateY(-.5rem);
+                    }
+                }
+            
+        }
+    }
+
+    .our__phones{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1rem;
+        flex-wrap: wrap;
+
+        h3{
+            color: #3d445d;
+            font-family: sans-serif;
+        }
+
+        .phones{
+            .phone{
+                display: block;
+                color: #3d445d;
+                text-decoration: none;
+                font-weight: 700;
+            }
+            display: flex;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+    }
+
+    .copyright{
+        text-align: center;
+        margin-top: 1.5rem;
+        color: #3d445d;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .socials{
+        width: 100%;
+
+        h3{
+            text-align: center;
+            width: 100%;
+        }
+
+        .social__icons{
+            margin: 1rem auto;
+
+        }
+    }
+
+    .our__phones{
+        
+        flex-direction: column;
+        align-items: center;
+    }
+}

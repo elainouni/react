@@ -1,0 +1,46 @@
+
+
+.main__login{
+    width: 60%;
+    margin: 3rem auto;
+
+    .login__title{
+        margin: 1rem auto;
+    }
+
+    .login__form{
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        input{
+            height: 3rem;
+            border-radius: .5rem;
+            border: .5px solid rgb(213, 212, 212);
+            outline: none;
+            padding-left: 1rem;
+            font-size: 1.2rem;
+        }
+
+        button{
+            display: block;
+            width: 30%;
+            margin: 1rem auto;
+            padding: .5rem .2rem;
+            font-size: 1rem;
+            font-weight: 700;
+            cursor: pointer;
+        }
+    }
+
+    .dontHaveAccount{
+        display: block;
+        width: 100%;
+        margin:2rem auto;
+        color: #505a77;
+        text-align: center;
+        font-weight: 700;
+    }
+}
